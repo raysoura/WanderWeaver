@@ -1,5 +1,6 @@
 package com.org.WanderWeaver.controller;
 
+import com.org.WanderWeaver.models.Stay;
 import com.org.WanderWeaver.models.Travel;
 import com.org.WanderWeaver.service.TravelService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,5 +19,10 @@ public class TravelController {
     @GetMapping("/")
     public List<Travel> getTravelDetails() {
         return travelService.getAll();
+    }
+
+    @GetMapping("/createTravel")
+    public Travel createTravel(Travel travel) {
+        return travelService.save(travel);
     }
 }
