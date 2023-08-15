@@ -15,4 +15,8 @@ public class CafeService {
     public List<Cafe> getAll() {
         return cafeRepository.findAll();
     }
+
+    public Cafe saveCafe(Cafe cafe) {
+        return cafeRepository.save(cafe);
+    }
 }

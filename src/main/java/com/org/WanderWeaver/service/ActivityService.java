@@ -17,4 +17,8 @@ public class ActivityService {
     public List<Activity> getAll() {
         return activityRepository.findAll();
     }
+
+    public Activity save(Activity activity) {
+        return activityRepository.save(activity);
+    }
 }

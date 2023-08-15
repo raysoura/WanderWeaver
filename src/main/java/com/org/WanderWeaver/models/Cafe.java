@@ -10,4 +10,12 @@ public class Cafe {
     @GeneratedValue
     @Id
     private int id;
+
+    private String name;
+
+    private String link;
+
+    private int rating;
+
+    private String review;
 }

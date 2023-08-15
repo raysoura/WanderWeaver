@@ -20,4 +20,9 @@ public class CafeController {
     public List<Cafe> getCafes() {
         return cafeService.getAll();
     }
+
+    @GetMapping("/createCafe")
+    public Cafe createCafe(Cafe cafe) {
+        return cafeService.saveCafe(cafe);
+    }
 }

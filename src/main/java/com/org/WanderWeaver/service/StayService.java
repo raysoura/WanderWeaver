@@ -17,4 +17,8 @@ public class StayService {
     public List<Stay> getAll() {
         return stayRepository.findAll();
     }
+
+    public Stay save(Stay stay) {
+        return stayRepository.save(stay);
+    }
 }
